@@ -41,15 +41,16 @@ namespace LoginPage
             this.label3 = new System.Windows.Forms.Label();
             this.themeTextBox = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.nextBtn = new System.Windows.Forms.Button();
-            this.previousBtn = new System.Windows.Forms.Button();
+            this.searchBtn = new System.Windows.Forms.Button();
+            this.genderTextBox = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // nameLabel
             // 
             this.nameLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.nameLabel.AutoSize = true;
-            this.nameLabel.Location = new System.Drawing.Point(46, 61);
+            this.nameLabel.Location = new System.Drawing.Point(43, 44);
             this.nameLabel.Name = "nameLabel";
             this.nameLabel.Size = new System.Drawing.Size(46, 25);
             this.nameLabel.TabIndex = 0;
@@ -58,7 +59,7 @@ namespace LoginPage
             // nameTextBox
             // 
             this.nameTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.nameTextBox.Location = new System.Drawing.Point(147, 54);
+            this.nameTextBox.Location = new System.Drawing.Point(144, 37);
             this.nameTextBox.Name = "nameTextBox";
             this.nameTextBox.Size = new System.Drawing.Size(416, 32);
             this.nameTextBox.TabIndex = 1;
@@ -66,7 +67,7 @@ namespace LoginPage
             // ageTextBox
             // 
             this.ageTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.ageTextBox.Location = new System.Drawing.Point(147, 124);
+            this.ageTextBox.Location = new System.Drawing.Point(144, 107);
             this.ageTextBox.Name = "ageTextBox";
             this.ageTextBox.Size = new System.Drawing.Size(416, 32);
             this.ageTextBox.TabIndex = 3;
@@ -75,7 +76,7 @@ namespace LoginPage
             // 
             this.ageLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ageLabel.AutoSize = true;
-            this.ageLabel.Location = new System.Drawing.Point(58, 131);
+            this.ageLabel.Location = new System.Drawing.Point(55, 114);
             this.ageLabel.Name = "ageLabel";
             this.ageLabel.Size = new System.Drawing.Size(34, 25);
             this.ageLabel.TabIndex = 2;
@@ -84,7 +85,7 @@ namespace LoginPage
             // usernameTextBox
             // 
             this.usernameTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.usernameTextBox.Location = new System.Drawing.Point(147, 194);
+            this.usernameTextBox.Location = new System.Drawing.Point(144, 177);
             this.usernameTextBox.Name = "usernameTextBox";
             this.usernameTextBox.Size = new System.Drawing.Size(416, 32);
             this.usernameTextBox.TabIndex = 5;
@@ -93,7 +94,7 @@ namespace LoginPage
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(19, 201);
+            this.label1.Location = new System.Drawing.Point(16, 184);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(73, 25);
             this.label1.TabIndex = 4;
@@ -102,7 +103,7 @@ namespace LoginPage
             // passwordTextBox
             // 
             this.passwordTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.passwordTextBox.Location = new System.Drawing.Point(147, 264);
+            this.passwordTextBox.Location = new System.Drawing.Point(144, 247);
             this.passwordTextBox.Name = "passwordTextBox";
             this.passwordTextBox.Size = new System.Drawing.Size(416, 32);
             this.passwordTextBox.TabIndex = 7;
@@ -111,7 +112,7 @@ namespace LoginPage
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(21, 271);
+            this.label2.Location = new System.Drawing.Point(18, 254);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(71, 25);
             this.label2.TabIndex = 6;
@@ -121,7 +122,7 @@ namespace LoginPage
             // adressTextBox
             // 
             this.adressTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.adressTextBox.Location = new System.Drawing.Point(147, 334);
+            this.adressTextBox.Location = new System.Drawing.Point(144, 317);
             this.adressTextBox.Name = "adressTextBox";
             this.adressTextBox.Size = new System.Drawing.Size(416, 32);
             this.adressTextBox.TabIndex = 9;
@@ -130,7 +131,7 @@ namespace LoginPage
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(38, 341);
+            this.label3.Location = new System.Drawing.Point(35, 324);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(54, 25);
             this.label3.TabIndex = 8;
@@ -139,7 +140,7 @@ namespace LoginPage
             // themeTextBox
             // 
             this.themeTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.themeTextBox.Location = new System.Drawing.Point(147, 403);
+            this.themeTextBox.Location = new System.Drawing.Point(144, 387);
             this.themeTextBox.Name = "themeTextBox";
             this.themeTextBox.Size = new System.Drawing.Size(416, 32);
             this.themeTextBox.TabIndex = 11;
@@ -148,38 +149,50 @@ namespace LoginPage
             // 
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(42, 410);
+            this.label4.Location = new System.Drawing.Point(39, 394);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(50, 25);
             this.label4.TabIndex = 10;
             this.label4.Text = "Theme";
             // 
-            // nextBtn
+            // searchBtn
             // 
-            this.nextBtn.Location = new System.Drawing.Point(448, 464);
-            this.nextBtn.Name = "nextBtn";
-            this.nextBtn.Size = new System.Drawing.Size(114, 40);
-            this.nextBtn.TabIndex = 12;
-            this.nextBtn.Text = "Next";
-            this.nextBtn.UseVisualStyleBackColor = true;
-            this.nextBtn.Click += new System.EventHandler(this.nextBtn_Click);
+            this.searchBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.searchBtn.Font = new System.Drawing.Font("Agency FB", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.searchBtn.Location = new System.Drawing.Point(233, 502);
+            this.searchBtn.Name = "searchBtn";
+            this.searchBtn.Size = new System.Drawing.Size(114, 40);
+            this.searchBtn.TabIndex = 12;
+            this.searchBtn.Text = "Search";
+            this.searchBtn.UseVisualStyleBackColor = true;
+            this.searchBtn.Click += new System.EventHandler(this.SearchBtn_Click);
             // 
-            // previousBtn
+            // genderTextBox
             // 
-            this.previousBtn.Location = new System.Drawing.Point(147, 464);
-            this.previousBtn.Name = "previousBtn";
-            this.previousBtn.Size = new System.Drawing.Size(114, 40);
-            this.previousBtn.TabIndex = 13;
-            this.previousBtn.Text = "Previous";
-            this.previousBtn.UseVisualStyleBackColor = true;
+            this.genderTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.genderTextBox.Location = new System.Drawing.Point(144, 457);
+            this.genderTextBox.Name = "genderTextBox";
+            this.genderTextBox.Size = new System.Drawing.Size(416, 32);
+            this.genderTextBox.TabIndex = 14;
+            // 
+            // label5
+            // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(55, 464);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(34, 25);
+            this.label5.TabIndex = 13;
+            this.label5.Text = "Sex";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(606, 515);
-            this.Controls.Add(this.previousBtn);
-            this.Controls.Add(this.nextBtn);
+            this.ClientSize = new System.Drawing.Size(606, 554);
+            this.Controls.Add(this.genderTextBox);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.searchBtn);
             this.Controls.Add(this.themeTextBox);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.adressTextBox);
@@ -215,8 +228,9 @@ namespace LoginPage
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox themeTextBox;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button nextBtn;
-        private System.Windows.Forms.Button previousBtn;
+        private System.Windows.Forms.Button searchBtn;
+        private System.Windows.Forms.TextBox genderTextBox;
+        private System.Windows.Forms.Label label5;
     }
 }
 
