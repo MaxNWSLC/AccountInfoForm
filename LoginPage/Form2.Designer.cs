@@ -85,7 +85,7 @@ namespace LoginPage
             this.loginBtn.TabIndex = 13;
             this.loginBtn.Text = "Login";
             this.loginBtn.UseVisualStyleBackColor = true;
-            this.loginBtn.Click += new System.EventHandler(this.loginBtn_Click);
+            this.loginBtn.Click += new System.EventHandler(this.LoginBtn_Click);
             // 
             // Form2
             // 
@@ -101,7 +101,7 @@ namespace LoginPage
             this.ForeColor = System.Drawing.Color.Black;
             this.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.Name = "Form2";
-            this.Text = "Form2";
+            this.Text = "Login";
             this.ResumeLayout(false);
             this.PerformLayout();
 

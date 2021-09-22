@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace LoginPage
+﻿namespace LoginPage
 {
-    class AccountInfo
+    class AccountClass
     {
         private string name;
         private int    age;
@@ -16,7 +10,7 @@ namespace LoginPage
         private string gender;
         private string theme;
 
-        public AccountInfo(string name, int age, string username, string password, string adress, string gender, string theme)
+        public AccountClass(string name, int age, string username, string password, string adress, string gender, string theme)
         {
             this.name = name;
             this.age = age;

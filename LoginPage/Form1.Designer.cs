@@ -41,7 +41,6 @@ namespace LoginPage
             this.label3 = new System.Windows.Forms.Label();
             this.themeTextBox = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.searchBtn = new System.Windows.Forms.Button();
             this.genderTextBox = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -117,7 +116,6 @@ namespace LoginPage
             this.label2.Size = new System.Drawing.Size(71, 25);
             this.label2.TabIndex = 6;
             this.label2.Text = "Password";
-            this.label2.Click += new System.EventHandler(this.Label2_Click);
             // 
             // adressTextBox
             // 
@@ -155,18 +153,6 @@ namespace LoginPage
             this.label4.TabIndex = 10;
             this.label4.Text = "Theme";
             // 
-            // searchBtn
-            // 
-            this.searchBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.searchBtn.Font = new System.Drawing.Font("Agency FB", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.searchBtn.Location = new System.Drawing.Point(233, 502);
-            this.searchBtn.Name = "searchBtn";
-            this.searchBtn.Size = new System.Drawing.Size(114, 40);
-            this.searchBtn.TabIndex = 12;
-            this.searchBtn.Text = "Search";
-            this.searchBtn.UseVisualStyleBackColor = true;
-            this.searchBtn.Click += new System.EventHandler(this.SearchBtn_Click);
-            // 
             // genderTextBox
             // 
             this.genderTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -192,7 +178,6 @@ namespace LoginPage
             this.ClientSize = new System.Drawing.Size(606, 554);
             this.Controls.Add(this.genderTextBox);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.searchBtn);
             this.Controls.Add(this.themeTextBox);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.adressTextBox);
@@ -228,7 +213,6 @@ namespace LoginPage
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox themeTextBox;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button searchBtn;
         private System.Windows.Forms.TextBox genderTextBox;
         private System.Windows.Forms.Label label5;
     }

@@ -51,7 +51,7 @@ namespace LoginPage
             this.Font = new System.Drawing.Font("Agency FB", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.Name = "Form3";
-            this.Text = "Form3";
+            this.Text = "Ouch!!!";
             this.ResumeLayout(false);
             this.PerformLayout();
 

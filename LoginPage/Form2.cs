@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace LoginPage
@@ -19,14 +12,16 @@ namespace LoginPage
             InitializeComponent();
         }
 
-        private void loginBtn_Click(object sender, EventArgs e)
+        private void LoginBtn_Click(object sender, EventArgs e)
         {
             username = usernameTextBox.Text;
             password = passwordTextBox.Text;
 
-            Form1 check = new Form1(username, password);
-            check.Show();
-            this.Hide();
+            Form1 check = new(username, password);
+            if (check.UserFound)
+            {
+                check.Show();
+            }
         }
     }
 }
