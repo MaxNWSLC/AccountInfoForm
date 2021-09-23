@@ -58,10 +58,13 @@ namespace LoginPage
             // nameTextBox
             // 
             this.nameTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.nameTextBox.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.nameTextBox.ForeColor = System.Drawing.Color.RoyalBlue;
             this.nameTextBox.Location = new System.Drawing.Point(144, 37);
             this.nameTextBox.Name = "nameTextBox";
             this.nameTextBox.Size = new System.Drawing.Size(416, 32);
             this.nameTextBox.TabIndex = 1;
+            this.nameTextBox.Text = "Name";
             // 
             // ageTextBox
             // 
@@ -175,6 +178,7 @@ namespace LoginPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.SteelBlue;
             this.ClientSize = new System.Drawing.Size(606, 554);
             this.Controls.Add(this.genderTextBox);
             this.Controls.Add(this.label5);
@@ -191,6 +195,7 @@ namespace LoginPage
             this.Controls.Add(this.nameTextBox);
             this.Controls.Add(this.nameLabel);
             this.Font = new System.Drawing.Font("Agency FB", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ForeColor = System.Drawing.Color.White;
             this.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.Name = "Form1";
             this.Text = "Account";
